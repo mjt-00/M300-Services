@@ -1,7 +1,5 @@
-M300 - K2
+M300 - K2 - Eigene Lernumgebung ist eingerichtet
 ===================
-
-Eigene Lernumgebung ist eingerichtet
 
 #### Kriterien
 
@@ -21,17 +19,7 @@ Eigene Lernumgebung ist eingerichtet
 
 
 > [⇧ **Nach oben**](#inhaltsverzeichnis)
-
-Als erster Schritt muss ein GitHub-Account eingerichtet werden. Dieser dient uns später als "Cloud-Speicher" unserer Dokumentation und weiteren Dateien.
-
-Folgende Arbeiten müssen gemacht werden:
-
 ### Account erstellen
 ***
 1. Auf www.github.com ein Benutzerkonto erstellen (Angabe von Username, E-Mail und Passwort)
 2. E-Mail zur Verifizierung des Kontos bestätigen und anschliessend auf GitHub anmelden
-
-
-### Repository erstellen
-***
-
