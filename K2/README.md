@@ -18,8 +18,12 @@ M300 - K2 - Eigene Lernumgebung ist eingerichtet
 
 
 
-> [⇧ **Nach oben**](#inhaltsverzeichnis)
+
 ### Account erstellen
 ***
 1. Auf www.github.com ein Benutzerkonto erstellen (Angabe von Username, E-Mail und Passwort)
+* Username  : sltaief
+* E-Mail    : s.ltaief21@gmail.com
+* Passwort  : ******************
 2. E-Mail zur Verifizierung des Kontos bestätigen und anschliessend auf GitHub anmelden
+
