@@ -14,6 +14,7 @@ M300 - K2 - Eigene Lernumgebung ist eingerichtet
 #### Inhaltsverzeichnis
 
 * 01 - [GitHub Account](#-01---github-account)
+* 02 - [Persönlicher Wissenstand](#-02---Persönlicher-Wissenstand)
 
 
 
@@ -27,3 +28,18 @@ M300 - K2 - Eigene Lernumgebung ist eingerichtet
 * Passwort  : ******************
 2. E-Mail zur Verifizierung des Kontos bestätigen und anschliessend auf GitHub anmelden
 
+### Persönlicher Wissenstand
+***
+## Linux
+
+
+## Virtualisierung
+
+
+## Vagrant
+
+## Git
+
+## Mark Down
+
+## Systemsicherheit
