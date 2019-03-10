@@ -13,7 +13,7 @@ M300 - K3 - Eigene Lernumgebung ist eingerichtet
 
 #### Inhaltsverzeichnis
 
-* 01 - [Zwei verschiedene Vm aus Vagrant-Cloud einrichten](#-01--- 2 verschiedene-Vm-aus-Vagrant-Cloud-einrichten)
+* 01 - [Zwei verschiedene Vm aus Vagrant-Cloud einrichten](#-01---2 verschiedene-Vm-aus-Vagrant-Cloud-einrichten)
 * 02 - [Vagrant-Befehle](#-02---Vagrant-Befehle)
 * 03 - [Eingerichtete Umgebung ist dokumentiert](#-03---Lernschritte)
 * 04 - [Funktionsweise getestet inkl. Dokumentation der Testfälle](#-04--- Funktionsweise getestet inkl. Dokumentation der Testfälle)
@@ -30,6 +30,11 @@ M300 - K3 - Eigene Lernumgebung ist eingerichtet
 
 ### Vagrant-Befehle 
 ***
+* Vagrant box add: Vagrant Box hinzufügen
+* Vagrant init: Vagrantfile erzeugen
+* Vagrant up: Virtuelle Maschinen erstellen & starten 
+* Vagrant ssh: SSH Verbindung zur VM aufbauen 
+
 ### Eingerichtete Umgebung ist dokumentiert
 ***
 ### Funktionsweise getestet inkl. Dokumentation der Testfälle
