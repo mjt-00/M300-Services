@@ -1,42 +1,94 @@
-M300 - K3 - Eigene Lernumgebung ist eingerichtet
-===================
+M300 - K3
+============
 
-#### Kriterien
-
-* Bestehende vm aus Vagrant-Cloud einrichten
-* Kennt die Vagrant-Befehle
-* Eingerichtete Umgebung ist dokumentiert (Umgebungs-Variablen, Netzwerkplan gezeichnet, Sicherheitsaspekte)
-* Funktionsweise getestet inkl. Dokumentation der Testfälle
-* andere, vorgefertigte vm auf eigenem Notebook aufgesetzt
-* Persönlicher Wissenstand im Bezug auf die wichtigsten Themen ist dokumentiert (Linux, Virtualisierung, Vagrant, Versionsverwaltung /  Git, Mark Down, Systemsicherheit)
-* Projekt mit Git und Mark Down dokumentiert
-
-#### Inhaltsverzeichnis
-
-* 01 - [Zwei verschiedene Vm aus Vagrant-Cloud einrichten](#-01---2 verschiedene-Vm-aus-Vagrant-Cloud-einrichten)
-* 02 - [Vagrant-Befehle](#-02---Vagrant-Befehle)
-* 03 - [Eingerichtete Umgebung ist dokumentiert](#-03---Lernschritte)
-* 04 - [Funktionsweise getestet inkl. Dokumentation der Testfälle](#-04--- Funktionsweise getestet inkl. Dokumentation der Testfälle)
-
-
-
-
-
-
-### 2 verschiedene Vm aus Vagrant-Cloud einrichten 
+**Bestehende VM aus Vagrant-Cloud einrichten**
 ***
-#### X VM
-#### Y VM
 
-### Vagrant-Befehle 
-***
-* Vagrant box add: Vagrant Box hinzufügen
-* Vagrant init: Vagrantfile erzeugen
-* Vagrant up: Virtuelle Maschinen erstellen & starten 
-* Vagrant ssh: SSH Verbindung zur VM aufbauen 
+**Allgemeines**
 
-### Eingerichtete Umgebung ist dokumentiert
+*Was sind überhaupt diese Vagrant-Cloud Boxen?*
+
+Boxen sind bei Vagrant vorkonfigurierte VMs (Vorlagen). Diese sollen den Prozess
+der Softwareverteilung und der Entwicklung beschleunigen. Jede Box, die von dem
+Nutzer benutzt wurde, wird auf dem Computer gespeichert und muss so nicht wieder
+aus dem Internet geladen werden.
+
+*Wie werden die Boxen hinzugefügt?*
+
+Boxen können explizit durch den Befehl vagrant box add [box-name] oder vagrant
+box add [box-url] heruntergeladen und durch vagrant box remove [box-name]
+entfernt werden. Ein "box-name" ist dabei durch Konvention wie folgt aufgebaut:
+Entwickler/Box (z.B. ubuntu/xenial64).
+
+*Wie werden die Boxen installiert?*
+
+Boxen können explizit durch den Befehl vagrant box add [box-name] oder vagrant
+box add [box-url] heruntergeladen und durch vagrant box remove [box-name]
+entfernt werden. Ein "box-name" ist dabei durch Konvention wie folgt aufgebaut:
+Entwickler/Box (z.B. ubuntu/xenial64).
+
 ***
-### Funktionsweise getestet inkl. Dokumentation der Testfälle
+
+**Box hinzufügen**
+
+Die Vagrant-Boxen können unter folgendem Link heruntergeladen werden: 
+https://app.vagrantup.com/boxes/search (dies sind bereits fertige Boxen die mit Vagrant eingepflegt werden können. 
+
+Hinzufügen einer Box zur lokalen Registry:
+
+    $ vagrant box add [box-name]
+
+In der lokalen Registry vorhandene Boxen anzeigen:
+
+    $ vagrant box list
+
+**VM erstellen**
+
+Vagrantfile Erzeugen und Provisionierung starten:
+
+    $ mkdir myserver   
+
+    $ cd myserver
+
+    $ vagrant init ubuntu/xenial64
+
+    $ vagrant up
+
+Aktueller Status der VM anzeigen:
+
+    $ vagrant status
+    
+**VM updaten** 
+Nach Änderungen im Vagrantfile kann ein Server wie folgt aktualisiert werden:
+
+    $ vagrant provision
+ 
+**VM löschen** 
+Die VM kann wie folgt gelöscht werden:
+
+    $ vagrant destroy -f
+
 ***
+
+**Eigene vorgefertigte VM**
+
+Terminal (Bash) öffnen
+
+In gewünschtem Verzeichnis einen neuen Ordner für die VM anlegen:
+
+    $ cd Wohin\\auch\\immer
+
+    $ mkdir MeineVagrantVM
+
+    $ cd MeineVagrantVM
+
+Vagrantfile erzeugen, VM erstellen und entsprechend starten: (die VM 's sind VM Boxen)
+
+    $ vagrant box add http://10.1.66.11/vagrant/ubuntu/xenial64.box --name
+      ubuntu/xenial64 \#Vagrant-Box vom Netzwerkshare hinzufügen
+
+    $ vagrant init ubuntu/xenial64 \#Vagrantfile erzeugen
+
+    $ vagrant up --provider virtualbox \#Virtuelle Maschine erstellen & starten
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
