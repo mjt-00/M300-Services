@@ -68,8 +68,5 @@ udo apt-get -y install unzip
 
 Hier wird zuerst das Unzip Modul installiert, sowie auch Ngrok. Ngrok ist dafür
 da um sichere SSH-Tunnels zu erstellen.
-
-Hier wird noch die Einstellung mitgegeben HTTP auf Port 1234
-umzustellen/weiterzuleiten.
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Hier wird noch die Einstellung mitgegeben HTTP auf Port 1234 umgestellt weitergeleitet
 
