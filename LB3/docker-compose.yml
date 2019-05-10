@@ -1,0 +1,16 @@
+version: '2.2'
+
+services:
+
+# webserver + php config
+  php:
+    build: php
+    ports:
+      - "4030:4030"
+      - "443:443"
+    restart: on-failure
+    volumes:
+      - ./php/www:/var/www/html
+    cpus: 1
+    mem_limit: 1024m
+

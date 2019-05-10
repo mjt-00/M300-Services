@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>
+
+<?php
+mysqli_connect("db", "root", "hunter2") or die(mysqli_error());
+echo "Sayf und Marc SQL :)<br />";
+?>
+
+</h1>
+
+</body>
+</html>
