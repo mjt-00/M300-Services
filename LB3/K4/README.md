@@ -1,4 +1,4 @@
-***Sicherheitsaspekte sind implementiert***
+***M300-Sicherheitsaspekte sind implementiert***
 ***
 
 Um die Überwachung gewährleisten zu können, haben wir uns das Tool PRTG
